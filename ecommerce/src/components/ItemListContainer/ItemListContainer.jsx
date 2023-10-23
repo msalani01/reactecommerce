@@ -15,6 +15,17 @@ const ItemListContainer = ({ greeting }) => {
             });
     }, []);
 
+    console.log(products)
+    const productsComponents = products.map(prod => {
+        return (
+            <div key={prod.id}>
+                <h1>{prod.name}</h1>
+                <img src={prod.img}/>
+            </div>
+        )
+    })
+
+    console.log(productsComponents)
     return (
         <div className="Display">
             <h1>{greeting}</h1>
