@@ -1,8 +1,20 @@
 .CardItem {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    border: 1px solid #ccc; 
-    padding: 10px; 
-    margin: 10px; 
+    display: flex;
+    flex-direction: column; /* Cambia a dirección vertical */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center; /* Alinea el texto en el centro */
 }
+
+.ItemHeader {
+    margin: 0; /* Elimina el margen superior para el título */
+    padding: 0;
+}
+
+.ItemImg {
+    width: 100px; /* Establece el ancho de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Resto de estilos, si es necesario */
