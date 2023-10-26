@@ -13,14 +13,14 @@ const ItemDetailContainer = () => {
             })
             .catch((error) => {
                 console.error(error);
-            });
-    }, []);
+            })
+    }, [])
 
     return (
         <div className="ItemDetailContainer">
             <ItemDetail {...product} />
         </div>
-    );
-};
+    )
+}
 
 export default ItemDetailContainer;
