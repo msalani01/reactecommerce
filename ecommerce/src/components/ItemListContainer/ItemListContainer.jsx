@@ -3,30 +3,26 @@ import React, { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { getProducts } from "../../asyncMock";
 import "./ItemListContainer.css"
+import { useParams } from "react-router-dom"
+
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([]);
+    
+    const { categoryId } = useParams()
 
     useEffect(() => {
-        getProducts()
-            .then((response) => {
-                setProducts(response);
+        const asyncFunc = categoryId ? getProductsByCategory : getProducts
+
+        asyncFunc(categoryId)
+            .then(response => {
+                setProducts(response)
             })
-            .catch((error) => {
-                console.error(error);
-            });
-    }, []);
+            .catch(error => {
+                console.error(error)
+            })
+    }, [categoryId])
 
-    console.log(products)
-    const productsComponents = products.map(prod => {
-        return (
-            <div key={prod.id}>
-                <h1>{prod.name}</h1>
-                <img src={prod.img}/>
-            </div>
-        )
-    })
-
-    console.log(productsComponents)
+    
     return (
         <div className="Display">
             <h1>{greeting}</h1>
