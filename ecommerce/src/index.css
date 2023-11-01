@@ -15,9 +15,12 @@
 }
 
 a {
+
   font-weight: 500;
-  color: #646cff;
+  color: #213547;
   text-decoration: inherit;
+  border-radius: 12px;
+
 }
 a:hover {
   color: #646cff;
