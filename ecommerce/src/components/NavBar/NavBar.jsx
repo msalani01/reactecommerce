@@ -1,12 +1,12 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return (
         <nav className="NavBar">
-            <NavLink to="/" className={({isActive}) => isActive ? "ActiveOption" : "Option"}>
+            <Link to="/" className={({isActive}) => isActive ? "ActiveOption" : "Option"}>
                 <h3>Ecomerce</h3>
-            </NavLink>
+            </Link>
 
             <div className="Categories">
                 <NavLink to={"/category/Libros"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}/>
@@ -14,6 +14,7 @@ const NavBar = () => {
                 <NavLink to={"/category/Comics"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}/>
 
             </div>
+            <CartWidget/>
         </nav>
     )
 }
