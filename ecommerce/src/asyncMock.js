@@ -15,7 +15,7 @@ const products = [
         category: "Libros",
         img:"https://images.cdn3.buscalibre.com/fit-in/360x360/61/8d/618d227e8967274cd9589a549adff52d.jpg",
         stock: 25,
-        description: ""
+        description: "Entre la boda de José Arcadio Buendía con Amelia Iguarán hasta la maldición de Aureliano Babilonia transcurre todo un siglo. Cien años de soledad para una estirpe única, fantástica, capaz de fundar una ciudad tan especial como Macondo y de engendrar niños con cola de cerdo."
     },
     {
         id: "3",
@@ -24,8 +24,9 @@ const products = [
         category: "Libros",
         img:"https://i.pinimg.com/originals/96/41/49/964149a26d0a728f02102449deeb792a.jpg",
         stock: 25,
-        description: "ESO"
+        description: "Todo empieza cuando un desconocido golpea la puerta de Borges y le ofrece el misterioso libro. El libro es único, no hay otro igual. En el libro de arena nunca se repiten sus páginas, porque el contenido muta, cambia a cada instante. Tal objeto obsesiona a Borges hasta el punto de considerarlo un peligro para la humanidad y entonces debe decidir qué hacer con él."
     }
+
 ]
 
 export const getProducts = () => {
