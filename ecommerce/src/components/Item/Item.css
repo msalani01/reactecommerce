@@ -1,20 +1,20 @@
 .CardItem {
     display: flex;
-    flex-direction: column; /* Cambia a dirección vertical */
+    flex-direction: column; 
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
-    text-align: center; /* Alinea el texto en el centro */
+    text-align: center; 
 }
 
 .ItemHeader {
-    margin: 0; /* Elimina el margen superior para el título */
+    margin: 0; 
     padding: 0;
 }
 
 .ItemImg {
-    width: 100px; /* Establece el ancho de la imagen */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 100px; 
+    height: auto;
 }
 
-/* Resto de estilos, si es necesario */
+
