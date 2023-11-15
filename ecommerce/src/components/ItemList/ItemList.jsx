@@ -6,7 +6,7 @@ const ItemList = ({products}) => {
         <div className="ListGroup">
             {products.map(prod => <Item key ={prod.id} {...prod}/>)}
             
-            <img src=""/>           
+                      
 
             
         </div>
