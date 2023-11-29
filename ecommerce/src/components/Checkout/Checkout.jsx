@@ -5,10 +5,9 @@ const Checkout = () => {
   const [orderNumber, setOrderNumber] = useState(null);
 
   const handleCheckout = (formData) => {
-    // Aquí podrías enviar los datos del formulario a tu backend
-    // para procesar el pedido y obtener un número de pedido.
 
-    // Simulación de un número de pedido (puedes ajustar esto según tus necesidades)
+
+
     const randomOrderNumber = Math.floor(Math.random() * 1000000);
     setOrderNumber(randomOrderNumber);
   };

@@ -4,7 +4,7 @@ const CheckoutForm = ({ onSubmit }) => {
   const [formData, setFormData] = useState({
     name: '',
     address: '',
-    // Otros campos que puedas necesitar
+
   });
 
   const handleChange = (e) => {
@@ -30,7 +30,6 @@ const CheckoutForm = ({ onSubmit }) => {
         E-mail:
         <input type="text" name="address" value={formData.address} onChange={handleChange} />
       </label>
-      {/* Otros campos del formulario */}
       <button type="submit">Realizar Pedido</button>
     </form>
   );
