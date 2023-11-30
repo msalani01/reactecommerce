@@ -1,0 +1,14 @@
+.Categories {
+    margin: 20px;
+}
+
+.Categories a {
+    display: inline-block; /* Para que los elementos enlazados se comporten como bloques */
+    padding: 10px; /* Relleno alrededor de los elementos enlazados */
+    border: 1px solid #ccc; /* Borde alrededor de los elementos enlazados */
+    margin-right: 10px; /* Margen entre los elementos enlazados */
+}
+
+.Categories a:last-child {
+    margin-right: 0; /* No hay margen a la derecha para el último elemento enlazado */
+}
