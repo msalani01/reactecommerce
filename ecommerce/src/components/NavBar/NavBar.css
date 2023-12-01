@@ -3,12 +3,12 @@
 }
 
 .Categories a {
-    display: inline-block; /* Para que los elementos enlazados se comporten como bloques */
-    padding: 10px; /* Relleno alrededor de los elementos enlazados */
-    border: 1px solid #ccc; /* Borde alrededor de los elementos enlazados */
-    margin-right: 10px; /* Margen entre los elementos enlazados */
+    display: inline-block; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    margin-right: 10px; 
 }
 
 .Categories a:last-child {
-    margin-right: 0; /* No hay margen a la derecha para el último elemento enlazado */
+    margin-right: 0; 
 }
