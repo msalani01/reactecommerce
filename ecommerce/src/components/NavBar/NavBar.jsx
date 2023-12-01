@@ -9,9 +9,9 @@ const NavBar = () => {
                 <h3>Libroverso</h3>
             </Link>
             <div className="Categories">
-                <NavLink to={'/category/Libros'} activeClassName='ActiveOption'>Libros</NavLink>
-                <NavLink to={'/category/Juegosdemesa'} activeClassName='ActiveOption'>Juegos de mesa</NavLink>
-                <NavLink to={'/category/Comics'} activeClassName='ActiveOption'>Comics</NavLink>
+                <NavLink to={'/category/Libros'} activeclassname='ActiveOption'>Libros</NavLink>
+                <NavLink to={'/category/Juegosdemesa'} activeclassname='ActiveOption'>Juegos de mesa</NavLink>
+                <NavLink to={'/category/Comics'} activeclassname='ActiveOption'>Comics</NavLink>
             </div>
         </nav>
     );
