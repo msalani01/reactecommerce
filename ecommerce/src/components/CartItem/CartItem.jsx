@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './CartItem.css';
 
-const CartItem = ({ id, name, img, price, quantity }) => {
+const CartItem = ({ id, name, price, quantity }) => {
+ 
+  const totalPrice = price * quantity;
+
   return (
     <div>
-      <p>Precio: ${price}</p>
+      <h4>{name}</h4>
       <p>Cantidad: {quantity}</p>
-        <picture>
-            <img src={img} alt={name} className="ItemImg" />
-        </picture>
+      <p>Precio unitario: ${price}</p>
+      <p>Total: ${totalPrice}</p>
+      {}
     </div>
   );
 };

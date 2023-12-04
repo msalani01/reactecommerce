@@ -25,7 +25,7 @@ const Cart = () => {
           quantity={product.quantity}
         />
       ))}
-      <h3>Total: ${total}</h3>
+      
       <button onClick={() => clearCart()} className='Button'>Limpiar carrito</button>
       <Link to='/checkout' className='Option'>Checkout</Link>
     </div>
